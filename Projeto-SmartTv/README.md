@@ -1,18 +1,55 @@
-## Getting Started
+# Simulação de uma Smart TV 📺
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto é uma simulação simples de uma Smart TV utilizando Java, com duas classes principais: `SmartTv` e `Usuario`. O objetivo é demonstrar conceitos básicos de orientação a objetos, como encapsulamento, métodos e atributos.
 
-## Folder Structure
+## 📁 Estrutura do Projeto
 
-The workspace contains two folders by default, where:
+- `SmartTv.java`: contém a lógica da TV, incluindo métodos para ligar/desligar, mudar canal e ajustar volume.
+- `Usuario.java`: classe principal para testar as funcionalidades da Smart TV.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🚀 Funcionalidades
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+A Smart TV possui as seguintes funcionalidades:
+- Ligar e desligar a TV.
+- Aumentar e diminuir o volume.
+- Mudar para um canal específico.
+- Navegar pelos canais (próximo e anterior).
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🛠️ Execução do Projeto
 
-## Dependency Management
+1. Certifique-se de ter o Java instalado na sua máquina.
+2. Compile as classes com o comando:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+```bash
+javac SmartTv.java Usuario.java
+```
+
+3. Execute o programa:
+
+```bash
+java Usuario
+```
+
+## 📄 Exemplo de Saída
+```
+CONFIGURAÇÕES INICIAIS DA TV
+TV ligada ? false
+Canal atual: 1
+Volume atual: 25
+-----------------------------------
+Novo Status -> TV ligada ? true
+Novo Status -> TV desligada ? false
+
+Canal atual: 1
+Novo Status -> Canal atual: 14
+
+Aumentando o volume para: 26
+Aumentando o volume para: 27
+Aumentando o volume para: 28
+Volume atual: 28
+```
+
+## 📩 Contato
+Caso queira discutir ou sugerir melhorias, fique à vontade!
+
+---
