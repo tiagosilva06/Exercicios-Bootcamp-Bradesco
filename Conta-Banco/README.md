@@ -1,18 +1,51 @@
-## Getting Started
+# Banco Digital - Conta Terminal
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição
+Este é um projeto simples em Java que simula a criação de uma conta bancária digital diretamente pelo terminal. O usuário insere suas informações e recebe uma mensagem de confirmação com os detalhes da conta criada.
 
-## Folder Structure
+## Funcionalidades
+- Solicita e captura dados do usuário via terminal.
+- Permite que o usuário insira seu nome, sobrenome, número da agência, número da conta e saldo inicial.
+- Exibe uma mensagem de confirmação com os dados cadastrados.
 
-The workspace contains two folders by default, where:
+## Tecnologias Utilizadas
+- Linguagem: Java
+- Ferramenta de Entrada: Scanner
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como Executar o Projeto
+1. Certifique-se de ter o **Java 8 ou superior** instalado em sua máquina.
+2. Clone este repositório ou baixe os arquivos.
+3. Abra o terminal na pasta do projeto e compile o arquivo:
+   ```sh
+   javac ContaTerminal.java
+   ```
+4. Execute o programa:
+   ```sh
+   java ContaTerminal
+   ```
+5. Siga as instruções exibidas no terminal para criar sua conta.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Exemplo de Uso
+```
+BEM VINDO AO BANCO DIGITAL
+---------------------------------
+Crie sua conta de forma rápida e fácil:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Digite seu nome:
+> Tiago
+Digite seu sobrenome:
+> da Silva Santos
+Digite o número da sua agência: (xxx-x)
+> 123-4
+Digite o número da sua conta: (xxxx)
+> 5678
+Insira o valor que deseja depositar em sua conta:
+> 1500.00
 
-## Dependency Management
+Olá Tiago da Silva Santos, obrigado por criar uma conta em nosso banco, sua agência é 123-4, conta 5678 e seu saldo de 1500.0 já está disponível para saque.
+```
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Melhorias Futuras
+- Implementar validação de entrada para evitar erros no preenchimento dos dados.
+- Criar uma interface gráfica para tornar a experiência do usuário mais amigável.
+- Armazenar os dados do usuário em um banco de dados.
